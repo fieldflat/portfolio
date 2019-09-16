@@ -1,0 +1,542 @@
+/*
+  全体設定
+*/
+body {
+  font-family: "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro", arial, sans-serif;
+  margin: 0 auto;
+}
+
+@media(min-width: 1100px) {
+
+  /*
+  * ヘッダー
+  */
+  header {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 8px;
+    padding: 25px 0;
+  }
+
+  /*
+  * メイン
+  */
+  main {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 150px;
+  }
+
+  .image {
+    width: 80%;
+    height: 80%;
+    border-radius: 30px;
+  }
+
+  .index2 {
+    display: none;
+  }
+
+  .index3 {
+    display: none;
+  }
+
+  .sp {
+    display: none;
+  }
+
+  /*
+  * フッター
+  */
+  footer{
+      width: 100%;
+      background-color: #f1f1f1;
+      text-align: center;
+      /* padding: 30px 0; */
+
+      position: absolute;/*←絶対位置*/
+      bottom: 0; /*下に固定*/
+      position: fixed;
+  }
+
+  footer ul {
+    width: 80%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    padding-left: 0 !important;
+  }
+
+  .a-item {
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0;
+    text-decoration: none;
+    color: black;
+  }
+
+  .a-item:hover {
+    opacity: 0.5;
+    background: white;
+  }
+
+  .heading {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1em;
+    color: rgb(90, 230, 63);
+  }
+
+  .heading:before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    display: inline-block;
+    width: 60px;
+    height: 5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: rgb(90, 230, 63);
+    border-radius: 2px;
+  }
+
+  /*
+  * Q and A
+  */
+  .cp_qa *, .cp_qa *:after, .cp_qa *:before {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .cp_qa .cp_qanda {
+    line-height: 1.5;
+    position: relative;
+    margin: 7em 0 2em 15em;
+    padding: 0 0 0 1em;
+    border-left: 1px solid #333333;
+  }
+  .cp_qa .quest {
+    font-weight: bold;
+    position: absolute;
+    bottom: -1em;
+    left: -15em;
+    display: inline-block;
+    width: 14em;
+    text-align: right;
+    color: rgb(50, 120, 211);
+  }
+  .cp_qa .cp_qanda::before {
+    font-family: serif;
+    font-size: 4em;
+    position: absolute;
+    top: -0.4em;
+    left: -3.7em;
+    display: inline-block;
+    width: 9em;
+    content: 'Q';
+    opacity: 0.1;
+  }
+  .cp_qa .answer {
+    min-height: 3em;
+    color: rgb(143, 143, 143);
+  }
+
+  /*
+  * 作品集
+  */
+  .work-item h1 {
+    padding: 0.25em 0.5em;/*上下 左右の余白*/
+    color: #494949;/*文字色*/
+    background: transparent;/*背景透明に*/
+    border-left: solid 5px #7db4e6;/*左線*/
+    text-align: left;
+  }
+}
+
+@media(max-width: 1024px) and (min-width: 750px) {
+  /*
+  * ヘッダー
+  */
+  header {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 8px;
+    padding: 25px 0;
+  }
+
+  /*
+  * メイン
+  */
+  main {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 150px;
+  }
+
+  .image {
+    /* width: 80%;
+    height: 80%; */
+    border-radius: 30px;
+  }
+
+  .index1 {
+    display: none;
+  }
+
+  .index3 {
+    display: none;
+  }
+
+  .sp {
+    display: none;
+  }
+
+  /*
+  * フッター
+  */
+  footer{
+      width: 100%;
+      background-color: #f1f1f1;
+      text-align: center;
+      /* padding: 30px 0; */
+
+      position: absolute;/*←絶対位置*/
+      bottom: 0; /*下に固定*/
+      position: fixed;
+  }
+
+  footer ul {
+    width: 80%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    padding-left: 0 !important;
+  }
+
+  .a-item {
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0;
+    text-decoration: none;
+    color: black;
+  }
+
+  .a-item:hover {
+    opacity: 0.5;
+    background: white;
+  }
+
+  .heading {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1em;
+    color: rgb(90, 230, 63);
+  }
+
+  .heading:before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    display: inline-block;
+    width: 60px;
+    height: 5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: rgb(90, 230, 63);
+    border-radius: 2px;
+  }
+
+  /*
+  * Q and A
+  */
+  .cp_qa *, .cp_qa *:after, .cp_qa *:before {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .cp_qa .cp_qanda {
+    line-height: 1.5;
+    position: relative;
+    margin: 7em 0 2em 15em;
+    padding: 0 0 0 1em;
+    border-left: 1px solid #333333;
+  }
+  .cp_qa .quest {
+    font-weight: bold;
+    position: absolute;
+    bottom: -1em;
+    left: -15em;
+    display: inline-block;
+    width: 14em;
+    text-align: right;
+    color: rgb(50, 120, 211);
+  }
+  .cp_qa .cp_qanda::before {
+    font-family: serif;
+    font-size: 4em;
+    position: absolute;
+    top: -0.4em;
+    left: -3.7em;
+    display: inline-block;
+    width: 9em;
+    content: 'Q';
+    opacity: 0.1;
+  }
+  .cp_qa .answer {
+    min-height: 3em;
+    color: rgb(143, 143, 143);
+  }
+
+  /*
+  * 作品集
+  */
+  .work-item h1 {
+    padding: 0.25em 0.5em;/*上下 左右の余白*/
+    color: #494949;/*文字色*/
+    background: transparent;/*背景透明に*/
+    border-left: solid 5px #7db4e6;/*左線*/
+    text-align: left;
+  }
+}
+
+/*
+ *
+ * スマホデザイン
+ *
+ */
+
+@media(max-width: 750px) {
+  /*
+  * ヘッダー
+  */
+  header {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 10px;
+    padding: 25px 0;
+  }
+
+  /*
+  * メイン
+  */
+  main {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 150px;
+  }
+
+  .image {
+    border-radius: 30px;
+  }
+
+  .index1 {
+    display: none;
+  }
+
+  .index2 {
+    display: none;
+  }
+
+  .pc_tab {
+    display: none;
+  }
+
+  /*
+  * フッター
+  */
+  footer{
+      width: 100%;
+      background-color: #f1f1f1;
+      text-align: center;
+      /* padding: 30px 0; */
+
+      position: absolute;/*←絶対位置*/
+      bottom: 0; /*下に固定*/
+      position: fixed;
+  }
+
+  footer ul {
+    width: 80%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    padding-left: 0 !important;
+  }
+
+  .a-item {
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px 0;
+    text-decoration: none;
+    color: black;
+  }
+
+  .a-item:hover {
+    opacity: 0.5;
+    background: white;
+  }
+
+  .heading {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1em;
+    color: rgb(90, 230, 63);
+  }
+
+  .heading:before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    display: inline-block;
+    width: 60px;
+    height: 5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: rgb(90, 230, 63);
+    border-radius: 2px;
+  }
+
+  /*
+  * Q and A
+  */
+  .cp_qa *, .cp_qa *:after, .cp_qa *:before {
+	font-family: 'FontAwesome', sans-serif;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.cp_qa .cp_actab {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	margin: 0 0 1em 0;
+	color: #ffffff;
+}
+.cp_qa .cp_actab input {
+	position: absolute;
+	opacity: 0;
+}
+/* 質問 */
+.cp_qa .cp_actab label {
+	line-height: 1.6em;
+	position: relative;
+	display: block;
+	margin: 0 0.5em 0.5em 2em;
+	padding: 1em 0 2em 0;
+	cursor: pointer;
+	border-radius: 0.3em;
+	background: #ff5722;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3);
+}
+.cp_qa .cp_actab label span {
+	display: block;
+	padding: 0 2em 1em 2em;
+	border-bottom: 1px solid #ffffff;
+}
+/* --?アイコン */
+.cp_qa .cp_actab label::before {
+	font-size: 2em;
+	position: absolute;
+	z-index: 0;
+	top: 0.5em;
+	left: -1em;
+	padding: 0 0.5em;
+	content: '\f128';
+	border: 3px solid #ffffff;
+	border-radius: 50%;
+	background: #ff5722;
+	display: inline-block;
+	width: 1.8em;
+	height: 1.8em;
+	line-height: 1.8em;
+}
+/* --▼アイコン */
+.cp_qa .cp_actab label::after {
+	font-size: 1em;
+	font-weight: normal;
+	line-height: 1em;
+	position: absolute;
+	right: 0;
+	bottom: 1em;
+	content: 'BC';
+	display: inline-block;
+	width: 100%;
+	height: 1em;
+	padding: 0.5em;
+	text-align: right;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+/* 答え */
+.cp_qa .cp_actab .cp_actab-content {
+	position: relative;
+	overflow: hidden;
+	max-height: 0;
+	margin: 0 0 0.5em 0;
+	padding: 0 0 0 5em;
+	-webkit-transition: max-height 0.5s ease;
+	        transition: max-height 0.5s ease;
+	color: #ffffff;
+}
+/* --!アイコン */
+.cp_qa .cp_actab .cp_actab-content::before {
+	font-size: 1.5em;
+	position: absolute;
+	z-index: 0;
+	top: calc(50% - 0.9em);
+	left: 2.5em;
+	padding: 0 0.6em;
+	content: '\f12a';
+	color: #ffffff;
+	border: 3px solid #ffffff;
+	border-radius: 50%;
+	background: #2196f3;
+	width: 1.8em;
+	height: 1.8em;
+	line-height: 1.8em;
+}
+.cp_qa .cp_actab .cp_actab-content p {
+	/* margin: 0.5em 0.5em 0.5em 0; */
+	padding: 1em 1em 1em 3em;
+	border-radius: 0.3em;
+	background: #2196f3;
+	box-shadow: 0 1px 2px 0 rgba(0,0,0,0.3);
+}
+/* 質問を開いた時の仕様 */
+/* --答えの高さ */
+.cp_qa .cp_actab input:checked ~ .cp_actab-content {
+	max-height: 40em;
+}
+/* 質問をクリックした時の▼アイコンの動き */
+.cp_qa .cp_actab input[type=checkbox]:checked + label::after {
+	bottom: 0em;
+	-webkit-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+
+  /*
+  * 作品集
+  */
+  .work-item h1 {
+    padding: 0.25em 0.5em;/*上下 左右の余白*/
+    color: #494949;/*文字色*/
+    background: transparent;/*背景透明に*/
+    border-left: solid 5px #7db4e6;/*左線*/
+    text-align: left;
+  }
+}

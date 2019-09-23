@@ -456,7 +456,7 @@ body {
 	top: 0.5em;
 	left: -1em;
 	padding: 0 0.5em;
-	content: '\f128';
+	/* content: '\f128'; */
 	border: 3px solid #ffffff;
 	border-radius: 50%;
 	background: #ff5722;
